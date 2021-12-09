@@ -1,0 +1,27 @@
+/*
+    contract_net_jason
+    ---------------------------
+
+    Jason Project File
+
+    This file defines the initial state of the MAS
+
+    Jason 3.0
+    dezembro 09, 2021 - 09:25:26
+*/
+
+MAS contract_net_jason {
+
+    infrastructure: Local
+
+    agents:
+        initiator [goals="l_cfp(1, a(1)),l_cfp(2, a(2)),l_cfp(3, a(3)),l_cfp(4, a(4)),l_cfp(5, a(5))"] #200;
+        participant [beliefs="i_do(a(1))"] #5;
+    		participant [beliefs="i_do(a(2))"] #5;
+    		participant [beliefs="i_do(a(3))"] #5;
+    		participant [beliefs="i_do(a(4))"] #5;
+    		participant [beliefs="i_do(a(5))"] #5;
+    		//participant [beliefs="i_do(a(2))"] #3;
+    		//participant [beliefs="i_do(a(3))"] #3;
+    		//participant [beliefs="i_do(buy(banana))"] #5;
+}
