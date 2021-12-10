@@ -15,13 +15,44 @@ MAS contract_net_jason {
     infrastructure: Local
 
     agents:
-        initiator [goals="l_cfp(1, a(1)),l_cfp(2, a(2)),l_cfp(3, a(3)),l_cfp(4, a(4)),l_cfp(5, a(5))"] #200;
-        participant [beliefs="i_do(a(1))"] #5;
-    		participant [beliefs="i_do(a(2))"] #5;
-    		participant [beliefs="i_do(a(3))"] #5;
-    		participant [beliefs="i_do(a(4))"] #5;
-    		participant [beliefs="i_do(a(5))"] #5;
-    		//participant [beliefs="i_do(a(2))"] #3;
-    		//participant [beliefs="i_do(a(3))"] #3;
-    		//participant [beliefs="i_do(buy(banana))"] #5;
+        //initiator [goals="l_cfp(1, a(1))"] #100;
+
+        //initiator [goals="l_cfp(1, a(1)),l_cfp(2, a(2)),l_cfp(3, a(3)),l_cfp(4, a(4)),l_cfp(5, a(5))"] #5;
+
+        initiator [goals="l_cfp(1, a(1)),l_cfp(2, a(2)),l_cfp(3, a(3)),l_cfp(4, a(4)),l_cfp(5, a(5)),l_cfp(6, a(6)),l_cfp(7, a(7)),l_cfp(8, a(8)),l_cfp(9, a(9)),l_cfp(10, a(10))"] #5;
+
+
+        //Total de 30
+        participant [beliefs="i_do(a(1))"] #3;
+        participant [beliefs="i_do(a(2))"] #3;
+    		participant [beliefs="i_do(a(3))"] #3;
+    		participant [beliefs="i_do(a(4))"] #3;
+    		participant [beliefs="i_do(a(5))"] #3;
+        //Total 30
+
+        participant [beliefs="i_do(a(6))"] #3;
+        participant [beliefs="i_do(a(7))"] #3;
+    		participant [beliefs="i_do(a(8))"] #3;
+    		participant [beliefs="i_do(a(9))"] #3;
+    		participant [beliefs="i_do(a(10))"] #3;
+
+
+        terminator [beliefs="limit(50)"];
+
+        /*
+          fixar 5 serviços
+          5 tipos de participante
+          variar o número de inicializador
+          numero de mensagens recebidas pelo initiator = S * P
+
+          initiator [goals="l_cfp(1, a(1))"] #50;
+          participant [beliefs="i_do(a(1))"] #1;
+          (1 + 1 + 1) * 50 / 4
+
+          initiator [goals="l_cfp(1, a(1))"] #1;
+          participant [beliefs="i_do(a(1))"] #50;
+          50 + 50 + 50 => faz 150 vezes
+          recebe 50
+          envia 100
+        */
 }

@@ -1,0 +1,70 @@
+comando: time java -classpath /home/alan/eclipse-workspace/TesteJADE/bin:/home/alan/eclipse-workspace/TesteJADE/lib/jade.jar StartJade
+
+Initiator0: Accepting proposal 9 from responder Responder6@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 8080216.984495
+Initiator0: TIME: 79.645931 ms
+Initiator0: Accepting proposal 9 from responder Responder2@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 8080217.350823
+Initiator0: TIME: 79.494096 ms
+Agent Responder6@192.168.0.110:1099/JADE successfully performed the requested action
+
+real	0m8,718s
+user	0m2,872s
+sys	0m0,222s
+
+
+Initiator0: Accepting proposal 9 from responder Responder0@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 8018472.827558
+Initiator0: TIME: 79.262146 ms
+Initiator0: Accepting proposal 9 from responder Responder16@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 8018473.150827
+Initiator0: TIME: 79.139095 ms
+Agent Responder0@192.168.0.110:1099/JADE successfully performed the requested action
+dez. 09, 2021 10:39:10 AM jade.domain.ams$3 run
+WARNING: >>>>>>>>> Main Container JVM is terminating. Activate platform shutdown
+
+real	0m8,721s
+user	0m2,559s
+sys	0m0,255s
+
+
+Initiator0: Accepting proposal 9 from responder Responder5@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7923756.323714
+Initiator0: TIME: 81.095496 ms
+Initiator0: Accepting proposal 9 from responder Responder4@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7923756.730417
+Initiator0: TIME: 80.98635 ms
+Agent Responder5@192.168.0.110:1099/JADE successfully performed the requested action
+dez. 09, 2021 10:37:35 AM jade.domain.ams$3 run
+WARNING: >>>>>>>>> Main Container JVM is terminating. Activate platform shutdown
+
+real	0m8,693s
+user	0m3,325s
+sys	0m0,299s
+
+
+Initiator0: Accepting proposal 9 from responder Responder6@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7959642.748779
+Initiator0: TIME: 82.156061 ms
+Initiator0: Accepting proposal 9 from responder Responder15@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7959643.088817
+Initiator0: TIME: 82.055245 ms
+Agent Responder6@192.168.0.110:1099/JADE successfully performed the requested action
+
+real	0m8,713s
+user	0m2,656s
+sys	0m0,240s
+
+
+Initiator0: Accepting proposal 9 from responder Responder7@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7978777.590206
+Initiator0: TIME: 81.454909 ms
+Initiator0: Accepting proposal 9 from responder Responder1@192.168.0.110:1099/JADE
+InitiatorBehaviour - End: 7978777.955534
+Initiator0: TIME: 81.368279 ms
+Agent Responder7@192.168.0.110:1099/JADE successfully performed the requested action
+
+real	0m8,730s
+user	0m3,287s
+sys	0m0,225s
+

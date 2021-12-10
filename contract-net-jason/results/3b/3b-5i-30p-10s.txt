@@ -1,0 +1,335 @@
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator4] 	172.00000000593718
+[initiator5] 	188.9999999984866
+[initiator2] 	256.0000000084983
+[initiator4] 	266.9999999925494
+[initiator1] 	364.000000001397
+[initiator1] 	595.0000000011642
+[initiator3] 	665.9999999974389
+[initiator3] 	686.9999999908032
+[initiator1] 	716.0000000003492
+[initiator1] 	747.0000000030268
+[initiator3] 	744.9999999953434
+[initiator4] 	751.0000000038417
+[initiator4] 	777.0000000018626
+[initiator4] 	783.9999999996508
+[initiator4] 	783.9999999996508
+[initiator4] 	783.9999999996508
+[initiator4] 	783.9999999996508
+[initiator4] 	785.0000000034925
+[initiator4] 	785.0000000034925
+[initiator3] 	786.999999996624
+[initiator2] 	778.9999999949941
+[initiator2] 	830.0000000017462
+[initiator1] 	864.000000001397
+[initiator2] 	880.9999999939464
+[initiator3] 	891.9999999925494
+[initiator2] 	933.0000000045402
+[initiator2] 	933.0000000045402
+[initiator2] 	933.0000000045402
+[initiator2] 	933.0000000045402
+[initiator2] 	933.0000000045402
+[initiator2] 	933.0000000045402
+[initiator1] 	934.9999999976717
+[initiator1] 	934.9999999976717
+[initiator1] 	934.9999999976717
+[initiator1] 	934.9999999976717
+[initiator1] 	934.9999999976717
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator5] 	971.9999999942956
+[initiator3] 	978.000000002794
+[initiator3] 	978.000000002794
+[initiator3] 	978.000000002794
+[initiator3] 	978.000000002794
+[initiator3] 	978.000000002794
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator5] 	168.99999999441206
+[initiator3] 	163.00000000046566
+[initiator4] 	176.99999999604188
+[initiator4] 	239.00000000139698
+[initiator5] 	239.00000000139698
+[initiator3] 	247.0000000030268
+[initiator5] 	316.00000000617
+[initiator2] 	336.99999999953434
+[initiator4] 	377.0000000076834
+[initiator2] 	369.0000000060536
+[initiator5] 	419.99999999825377
+[initiator3] 	421.0000000020955
+[initiator4] 	427.9999999998836
+[initiator2] 	431.0000000114087
+[initiator1] 	443.0000000138534
+[initiator1] 	462.00000001408625
+[initiator4] 	478.00000000279397
+[initiator2] 	479.0000000066357
+[initiator3] 	499.0000000107102
+[initiator2] 	519.0000000002328
+[initiator3] 	536.0000000073342
+[initiator1] 	523.0000000010477
+[initiator2] 	555.000000007567
+[initiator1] 	552.0000000105938
+[initiator1] 	561.0000000015134
+[initiator1] 	585.0000000064028
+[initiator2] 	593.0000000080327
+[initiator3] 	611.0000000044238
+[initiator1] 	620.9999999991851
+[initiator2] 	635.0000000093132
+[initiator1] 	649.0000000048894
+[initiator1] 	648.9999999903375
+[initiator1] 	656.9999999919673
+[initiator2] 	671.0000000020955
+[initiator2] 	671.0000000020955
+[initiator3] 	673.9999999990687
+[initiator3] 	687.9999999946449
+[initiator3] 	699.9999999970896
+[initiator3] 	702.000000004773
+[initiator4] 	716.0000000003492
+[initiator4] 	716.0000000003492
+[initiator4] 	716.0000000003492
+[initiator4] 	716.0000000003492
+[initiator4] 	716.0000000003492
+[initiator5] 	748.9999999961583
+[initiator5] 	748.9999999961583
+[initiator5] 	748.9999999961583
+[initiator5] 	748.9999999961583
+[initiator5] 	748.9999999961583
+[initiator5] 	748.9999999961583
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator1] 	163.99999998975545
+[initiator3] 	130.9999999939464
+[initiator2] 	240.99999999452848
+[initiator2] 	278.99999999499414
+[initiator2] 	375
+[initiator4] 	387.9999999917345
+[initiator2] 	524.9999999941792
+[initiator1] 	735.0000000005821
+[initiator2] 	781.0000000026776
+[initiator5] 	807.0000000006985
+[initiator4] 	823.9999999932479
+[initiator2] 	884.9999999947613
+[initiator2] 	884.9999999947613
+[initiator2] 	884.9999999947613
+[initiator2] 	885.0000000093132
+[initiator2] 	885.0000000093132
+[initiator4] 	887.0000000024447
+[initiator4] 	915.9999999974389
+[initiator4] 	917.0000000012806
+[initiator4] 	917.0000000012806
+[initiator4] 	917.0000000012806
+[initiator4] 	917.0000000012806
+[initiator4] 	917.9999999905704
+[initiator4] 	917.9999999905704
+[initiator1] 	955.0000000017462
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator1] 	955.999999991036
+[initiator3] 	891.9999999925494
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator3] 	938.9999999984866
+[initiator5] 	998.9999999961583
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+[initiator5] 	1000
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator4] 	161.99999999662396
+[initiator1] 	164.00000000430737
+[initiator5] 	157.99999999580905
+[initiator3] 	168.99999999441206
+[initiator2] 	180.9999999968568
+[initiator5] 	228.00000000279397
+[initiator3] 	241.99999999837019
+[initiator4] 	243.99999999150168
+[initiator2] 	254.9999999901047
+[initiator5] 	312.9999999946449
+[initiator3] 	330.00000000174623
+[initiator4] 	331.9999999948777
+[initiator2] 	354.99999999592546
+[initiator4] 	441.9999999954598
+[initiator3] 	441.9999999954598
+[initiator2] 	466.99999998963904
+[initiator5] 	466.00000000034925
+[initiator3] 	546.9999999913853
+[initiator5] 	561.0000000015134
+[initiator4] 	572.0000000001164
+[initiator2] 	573.9999999932479
+[initiator1] 	573.9999999932479
+[initiator3] 	646.999999997206
+[initiator2] 	659.9999999889405
+[initiator1] 	646.999999997206
+[initiator1] 	656.9999999919673
+[initiator3] 	703.9999999979045
+[initiator2] 	706.9999999948777
+[initiator1] 	701.9999999902211
+[initiator1] 	720.999999990454
+[initiator5] 	722.9999999981374
+[initiator3] 	739.9999999906868
+[initiator5] 	732.9999999928987
+[initiator4] 	753.999999986263
+[initiator1] 	759.9999999947613
+[initiator3] 	766.9999999925494
+[initiator5] 	756.9999999977881
+[initiator4] 	770.9999999933643
+[initiator3] 	775.9999999980209
+[initiator5] 	774.0000000048894
+[initiator5] 	783.9999999996508
+[initiator1] 	798.9999999990687
+[initiator1] 	816.9999999954598
+[initiator2] 	819.999999992433
+[initiator2] 	820.9999999962747
+[initiator2] 	820.9999999962747
+[initiator1] 	826.9999999902211
+[initiator4] 	827.9999999940628
+[initiator4] 	827.9999999940628
+[initiator4] 	827.9999999940628
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator1] 	195.00000000698492
+[initiator4] 	387.0000000024447
+[initiator4] 	470.00000000116415
+[initiator5] 	618.0000000022119
+[initiator3] 	834.0000000025611
+[initiator4] 	904.9999999988358
+[initiator3] 	901.0000000125729
+[initiator2] 	913.0000000004657
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator4] 	961.9999999995343
+[initiator2] 	957.9999999987194
+[initiator2] 	971.0000000050059
+[initiator2] 	975.9999999951106
+[initiator2] 	976.9999999989523
+[initiator2] 	976.9999999989523
+[initiator2] 	976.9999999989523
+[initiator2] 	976.9999999989523
+[initiator2] 	976.9999999989523
+[initiator2] 	976.9999999989523
+[initiator1] 	979.0000000066357
+[initiator1] 	979.0000000066357
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator1] 	979.9999999959255
+[initiator3] 	961.9999999995343
+[initiator5] 	990.0000000052387
+[initiator3] 	994.0000000060536
+[initiator3] 	995.0000000098953
+[initiator3] 	995.0000000098953
+[initiator3] 	995.0000000098953
+[initiator3] 	995.0000000098953
+[initiator3] 	994.0000000060536
+[initiator3] 	995.0000000098953
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+[initiator5] 	1017.9999999963911
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds

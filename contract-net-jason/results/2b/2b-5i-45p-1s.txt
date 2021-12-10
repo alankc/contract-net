@@ -1,0 +1,110 @@
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator3] 	66.00000000617001
+[initiator2] 	67.99999999930151
+[initiator1] 	67.99999999930151
+[initiator5] 	69.999999992433
+[initiator4] 	70.99999999627471
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator2] 	65.0000000023283
+[initiator4] 	66.9999999954598
+[initiator1] 	68.9999999885913
+[initiator5] 	68.9999999885913
+[initiator3] 	70.99999999627471
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator1] 	62.000000005355105
+[initiator3] 	65.9999999916181
+[initiator2] 	65.9999999916181
+[initiator5] 	66.9999999954598
+[initiator4] 	66.9999999954598
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator1] 	67.99999999930151
+[initiator4] 	67.99999999930151
+[initiator3] 	69.00000000314321
+[initiator2] 	69.999999992433
+[initiator5] 	69.999999992433
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+Executing /usr/lib/jvm/java-17-oracle/bin/java -classpath /home/alan/Documents/jason-3.0/libs/ant-launcher-1.10.5.jar org.apache.tools.ant.launch.Launcher -e -f bin/contract_net_jason.xml run
+Buildfile: /home/alan/Documents/contract-net/contract-net-jason/bin/contract_net_jason.xml
+
+init:
+
+user-init:
+
+compile:
+
+run:
+Running project contract_net_jason
+Jason Http Server running on http://127.0.1.1:3272
+[initiator3] 	55.999999996856786
+[initiator2] 	58.99999999382999
+[initiator1] 	58.99999999382999
+[initiator5] 	65.0000000023283
+[initiator4] 	65.9999999916181
+
+user-end:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

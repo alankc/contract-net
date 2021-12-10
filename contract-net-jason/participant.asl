@@ -24,8 +24,9 @@ price(Service,X) :- i_do(Service) & not working & .random(R) & X = (10*R)+100.
    :  proposal(CNPId,Task,Offer)
    <- //.print("My proposal '",Offer,"' won CNP ",CNPId, " for ",Task,"!");
    		+working;
-      	.send(A, tell, infom_result(CNPId, 28.10));
-		-working.
+      //.wait(100); //I am working
+      .send(A, tell, infom_result(CNPId, 28.10));
+      -working.
 
 @r2 +reject_proposal(CNPId)
    <- //.print("I lost CNP ",CNPId, ".");

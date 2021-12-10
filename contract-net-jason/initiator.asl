@@ -34,7 +34,8 @@ concluded(Id, WinAg, Res)
 		!bid(Id, LP);
 		!select_bid(Id, ListOff, WinAg);
 		!send_result(Id, ListOff, WinAg);
-		!wait_conclusion(Id, WinAg).//;
+    .send(terminator, tell, end(Id,Task)).
+		//!wait_conclusion(Id, WinAg).//;
 		//!conclusion(Id, WinAg).
 
 +!call(Id, Task, LP)
