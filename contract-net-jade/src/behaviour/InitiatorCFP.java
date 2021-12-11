@@ -34,9 +34,9 @@ public class InitiatorCFP extends ContractNetInitiator {
 		if (failure.getSender().equals(myAgent.getAMS())) {
 			// FAILURE notification from the JADE runtime: the receiver
 			// does not exist
-			// System.out.println("Responder does not exist");
+			System.out.println("Responder does not exist");
 		} else {
-			// System.out.println("Agent " + failure.getSender().getName() + " failed");
+			//System.out.println("Agent " + failure.getSender().getName() + " failed");
 			// System.exit(0);
 		}
 		// Immediate failure --> we will not receive a response from this agent
@@ -46,8 +46,8 @@ public class InitiatorCFP extends ContractNetInitiator {
 	protected void handleAllResponses(Vector responses, Vector acceptances) {
 		if (responses.size() < nResponders) {
 			// Some responder didn't reply within the specified timeout
-			// System.out.println("Timeout expired: missing " + (nResponders -
-			// responses.size()) + " responses");
+			System.out.println("Timeout expired: missing " + (nResponders -
+			 responses.size()) + " responses");
 		}
 		// Evaluate proposals.
 		int bestProposal = -1;
@@ -57,11 +57,15 @@ public class InitiatorCFP extends ContractNetInitiator {
 		while (e.hasMoreElements()) {
 			ACLMessage msg = (ACLMessage) e.nextElement();
 			if (msg.getPerformative() == ACLMessage.PROPOSE) {
+				
+				//setting reply with reject
 				ACLMessage reply = msg.createReply();
 				reply.setPerformative(ACLMessage.REJECT_PROPOSAL);
 				acceptances.addElement(reply);
+				
+				//defining best proposal
 				int proposal = Integer.parseInt(msg.getContent());
-				if (proposal > bestProposal) {
+				if (proposal < bestProposal) {
 					bestProposal = proposal;
 					bestProposer = msg.getSender();
 					accept = reply;
