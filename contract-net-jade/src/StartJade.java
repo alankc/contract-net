@@ -34,9 +34,9 @@ public class StartJade {
 
 	void createAgents() throws Exception {
 
-		int services = 1;
-		int participants = 20;
-		int initiators = 2;
+		int services = 5;
+		int participants = 5;
+		int initiators = 1;
 
 		String oServices[] = new String[services];
 		String oParticipants[] = new String[participants];
@@ -50,7 +50,7 @@ public class StartJade {
 			String name = "P" + i;
 			oParticipants[i] = name;
 
-			AgentController aP = cc.createNewAgent(name, "agent.ParticipantAgent", new Object[] { oServices[0] });
+			AgentController aP = cc.createNewAgent(name, "agent.ParticipantAgent", new Object[] { oServices[i] });
 			aP.start();
 		}
 

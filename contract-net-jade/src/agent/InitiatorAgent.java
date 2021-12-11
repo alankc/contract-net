@@ -28,7 +28,9 @@ public class InitiatorAgent extends Agent {
 			// Adding CFPs
 			for (int i = 0; i < services.length; i++) {
 				ACLMessage msg = generateMsg(services[i]);
-				addBehaviour(new InitiatorCFP(this, msg, participants.length));
+				long start = System.nanoTime();
+				addBehaviour(new InitiatorCFP(this, msg, participants.length, start));
+				System.out.println(getLocalName()  + " - start: " + start / 1000000.0);
 			}
 		}
 

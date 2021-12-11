@@ -11,13 +11,14 @@ import jade.proto.ContractNetInitiator;
 @SuppressWarnings("serial")
 public class InitiatorCFP extends ContractNetInitiator {
 
-	//private long start;
-	//private long end;
+	private long start;
+	private long end;
 	private long nResponders;
 	
-	public InitiatorCFP(Agent a, ACLMessage cfp, long nResponders) {
+	public InitiatorCFP(Agent a, ACLMessage cfp, long nResponders, long start) {
 		super(a, cfp);
 		this.nResponders = nResponders;
+		this.start = start;
 	}
 
 	protected void handlePropose(ACLMessage propose, Vector v) {
@@ -35,7 +36,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 			System.out.println("Responder does not exist");
 		} else {
 			System.out.println("Agent " + failure.getSender().getName() + " failed");
-			System.exit(0);
+			//System.exit(0);
 
 		}
 		// Immediate failure --> we will not receive a response from this agent
@@ -72,9 +73,9 @@ public class InitiatorCFP extends ContractNetInitiator {
 					+ bestProposer.getName());
 			accept.setPerformative(ACLMessage.ACCEPT_PROPOSAL);
 		}
-		//end = System.nanoTime();
-		//System.out.println(this.getBehaviourName() + " - End: " + end / 1000000.0);
-		//System.out.println(myAgent.getLocalName() + ": TIME: " + (end - start) / 1000000.0 + " ms");
+		end = System.nanoTime();
+		System.out.println(myAgent.getLocalName()  + " - End: " + end / 1000000.0);
+		System.out.println(myAgent.getLocalName() + ": TIME: " + (end - start) / 1000000.0 + " ms");
 	}
 
 	protected void handleInform(ACLMessage inform) {
