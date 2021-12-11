@@ -30,7 +30,7 @@ public class InitiatorAgent extends Agent {
 				ACLMessage msg = generateMsg(services[i]);
 				long start = System.nanoTime();
 				addBehaviour(new InitiatorCFP(this, msg, participants.length, start));
-				System.out.println(getLocalName()  + " - start: " + start / 1000000.0);
+				//System.out.println(getLocalName()  + " - start: " + start / 1000000.0);
 			}
 		}
 

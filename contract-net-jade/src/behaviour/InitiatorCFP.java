@@ -22,20 +22,20 @@ public class InitiatorCFP extends ContractNetInitiator {
 	}
 
 	protected void handlePropose(ACLMessage propose, Vector v) {
-		System.out.println("Agent " + propose.getSender().getName() + " proposed " + propose.getContent());
+		//System.out.println("Agent " + propose.getSender().getName() + " proposed " + propose.getContent());
 	}
 
 	protected void handleRefuse(ACLMessage refuse) {
-		System.out.println("Agent " + refuse.getSender().getName() + " refused");
+		//System.out.println("Agent " + refuse.getSender().getName() + " refused");
 	}
 
 	protected void handleFailure(ACLMessage failure) {
 		if (failure.getSender().equals(myAgent.getAMS())) {
 			// FAILURE notification from the JADE runtime: the receiver
 			// does not exist
-			System.out.println("Responder does not exist");
+			//System.out.println("Responder does not exist");
 		} else {
-			System.out.println("Agent " + failure.getSender().getName() + " failed");
+			//System.out.println("Agent " + failure.getSender().getName() + " failed");
 			//System.exit(0);
 
 		}
@@ -46,7 +46,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 	protected void handleAllResponses(Vector responses, Vector acceptances) {
 		if (responses.size() < nResponders) {
 			// Some responder didn't reply within the specified timeout
-			System.out.println("Timeout expired: missing " + (nResponders - responses.size()) + " responses");
+			//System.out.println("Timeout expired: missing " + (nResponders - responses.size()) + " responses");
 		}
 		// Evaluate proposals.
 		int bestProposal = -1;
@@ -69,12 +69,12 @@ public class InitiatorCFP extends ContractNetInitiator {
 		}
 		// Accept the proposal of the best proposer
 		if (accept != null) {
-			System.out.println(myAgent.getLocalName() + ": Accepting proposal " + bestProposal + " from responder "
-					+ bestProposer.getName());
+			//System.out.println(myAgent.getLocalName() + ": Accepting proposal " + bestProposal + " from responder "
+			//		+ bestProposer.getName());
 			accept.setPerformative(ACLMessage.ACCEPT_PROPOSAL);
 		}
 		end = System.nanoTime();
-		System.out.println(myAgent.getLocalName()  + " - End: " + end / 1000000.0);
+		//System.out.println(myAgent.getLocalName()  + " - End: " + end / 1000000.0);
 		System.out.println(myAgent.getLocalName() + ": TIME: " + (end - start) / 1000000.0 + " ms");
 	}
 
