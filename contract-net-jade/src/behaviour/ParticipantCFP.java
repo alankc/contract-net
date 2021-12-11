@@ -71,14 +71,14 @@ public class ParticipantCFP extends SSResponderDispatcher {
 			}
 
 			protected void handleRejectProposal(ACLMessage cfp, ACLMessage propose, ACLMessage reject) {
-				// System.out.println("Agent "+getLocalName()+": Proposal rejected");
+				 //System.out.println("Agent "+ myAgent.getLocalName()+": Proposal rejected");
 			}
 		};
 	}
 	
 	private int evaluateAction() {
 		// Simulate an evaluation by generating a random number
-		return (int) (Math.random() * 10);
+		return (int) (Math.random() * 1000);
 	}
 
 	private boolean performAction() {

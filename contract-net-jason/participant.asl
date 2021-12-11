@@ -1,6 +1,6 @@
 // gets the price for the product,
 // a random value between 100 and 110.
-price(Service,X) :- i_do(Service) & not working & .random(R) & X = (10*R)+100.
+price(Service,X) :- i_do(Service) & not working & .random(R) & X = 100 * R.
 
 !register.
 
