@@ -35,8 +35,8 @@ public class StartJade {
 	void createAgents() throws Exception {
 
 		int services = 1;
-		int participants = 100;
-		int initiators = 10;
+		int participants = 20;
+		int initiators = 2;
 
 		String oServices[] = new String[services];
 		String oParticipants[] = new String[participants];

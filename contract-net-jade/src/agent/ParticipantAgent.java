@@ -8,9 +8,23 @@ import jade.lang.acl.MessageTemplate;
 
 @SuppressWarnings("serial")
 public class ParticipantAgent extends Agent {
+	
+	private boolean working;
+	
+	public boolean getWorking()
+	{
+		return	working;
+	}
+	
+	public void setWorking(boolean working)
+	{
+		this.working = working;
+	}
 
 	protected void setup() {
-
+		
+		this.working = false;
+		
 		Object[] args = getArguments();
 
 		// arg 0 - my service

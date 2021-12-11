@@ -1,5 +1,6 @@
 package behaviour;
 
+import agent.ParticipantAgent;
 import jade.core.Agent;
 import jade.core.behaviours.Behaviour;
 import jade.domain.FIPAAgentManagement.FailureException;
@@ -26,10 +27,12 @@ public class ParticipantCFP extends SSResponderDispatcher {
 			protected ACLMessage handleCfp(ACLMessage cfp) throws NotUnderstoodException, RefuseException {
 				// System.out.println("Agent "+getLocalName()+": CFP received from
 				// "+cfp.getSender().getName()+". Action is "+cfp.getContent());
-				int proposal = evaluateAction();
-				if (proposal > 2) {
+				
+				//If agent is no working
+				if (!((ParticipantAgent)myAgent).getWorking()) {
 					// We provide a proposal
 					// System.out.println("Agent "+getLocalName()+": Proposing "+proposal);
+					int proposal = evaluateAction();
 					ACLMessage propose = cfp.createReply();
 					propose.setPerformative(ACLMessage.PROPOSE);
 					propose.setContent(String.valueOf(proposal));
@@ -48,8 +51,15 @@ public class ParticipantCFP extends SSResponderDispatcher {
 				if (performAction()) {
 					// System.out.println("Agent "+getLocalName()+": Action successfully
 					// performed");
+					
+					
+					((ParticipantAgent)myAgent).setWorking(true);
+					
 					ACLMessage inform = accept.createReply();
 					inform.setPerformative(ACLMessage.INFORM);
+					
+					((ParticipantAgent)myAgent).setWorking(false);
+					
 					return inform;
 				} else {
 					// System.out.println("Agent "+getLocalName()+": Action execution failed");
