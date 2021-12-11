@@ -81,7 +81,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 		}
 		end = System.nanoTime();
 		// System.out.println(myAgent.getLocalName() + " - End: " + end / 1000000.0);
-		System.out.println(myAgent.getLocalName() + ": TIME: " + (end - start) / 1000000.0 + " ms");
+		System.out.println(myAgent.getLocalName() + "\t" + (end - start) / 1000000.0);
 		
 		//Sending message to terminator
 		//It probably will not wait all conclusions
