@@ -45,6 +45,9 @@ public class StartJade {
 			String s = "a(" + i + ")";
 			oServices[i] = s;
 		}
+		
+		AgentController aT = cc.createNewAgent("Terminator", "agent.TerminatorAgent", new Object[] { (long)25 });
+		aT.start();
 
 		for (int i = 0; i < participants; i++) {
 			String name = "P" + i;
