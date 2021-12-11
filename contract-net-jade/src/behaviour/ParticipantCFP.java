@@ -23,7 +23,6 @@ public class ParticipantCFP extends SSResponderDispatcher {
 
 	@Override
 	protected Behaviour createResponder(ACLMessage cfp) {
-		// TODO Auto-generated method stub
 		return new SSContractNetResponder(myAgent, cfp) {
 			@Override
 			protected ACLMessage handleCfp(ACLMessage cfp) throws NotUnderstoodException, RefuseException {
@@ -35,7 +34,8 @@ public class ParticipantCFP extends SSResponderDispatcher {
 					// We provide a proposal
 					// System.out.println("Agent "+getLocalName()+": Proposing "+proposal);
 									
-					int proposal = evaluateAction();
+					double proposal = evaluateAction();
+					//System.out.println("Agent "+ myAgent.getLocalName()+": Proposing "+proposal);
 					ACLMessage propose = cfp.createReply();
 					propose.setPerformative(ACLMessage.PROPOSE);
 					propose.setContent(String.valueOf(proposal));
@@ -76,9 +76,9 @@ public class ParticipantCFP extends SSResponderDispatcher {
 		};
 	}
 	
-	private int evaluateAction() {
+	private double evaluateAction() {
 		// Simulate an evaluation by generating a random number
-		return (int) (Math.random() * 1000);
+		return (Math.random() * 100.0);
 	}
 
 	private boolean performAction() {

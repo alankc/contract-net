@@ -50,7 +50,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 			 responses.size()) + " responses");
 		}
 		// Evaluate proposals.
-		int bestProposal = -1;
+		double bestProposal = Double.MAX_VALUE;
 		AID bestProposer = null;
 		ACLMessage accept = null;
 		Enumeration e = responses.elements();
@@ -64,7 +64,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 				acceptances.addElement(reply);
 				
 				//defining best proposal
-				int proposal = Integer.parseInt(msg.getContent());
+				double proposal = Double.parseDouble(msg.getContent());
 				if (proposal < bestProposal) {
 					bestProposal = proposal;
 					bestProposer = msg.getSender();
@@ -74,9 +74,9 @@ public class InitiatorCFP extends ContractNetInitiator {
 		}
 		// Accept the proposal of the best proposer
 		if (accept != null) {
-			// System.out.println(myAgent.getLocalName() + ": Accepting proposal " +
-			// bestProposal + " from responder "
-			// + bestProposer.getName());
+			 //System.out.println(myAgent.getLocalName() + ": Accepting proposal " +
+			 //bestProposal + " from responder "
+			 //+ bestProposer.getName());
 			accept.setPerformative(ACLMessage.ACCEPT_PROPOSAL);
 		}
 		end = System.nanoTime();
