@@ -17,10 +17,29 @@ public class StartJade {
 
 	ContainerController cc;
 
+	private int initiators;
+	private int participants;
+	private int services;
+
 	public static void main(String[] args) throws Exception {
-		StartJade s = new StartJade();
+
+		int ini = Integer.parseInt(args[0]);
+		int par = Integer.parseInt(args[1]);
+		int ser = Integer.parseInt(args[2]);
+		
+		System.out.println("Initiator: " + ini);
+		System.out.println("Participant: " + par);
+		System.out.println("Services: " + ser);
+
+		StartJade s = new StartJade(ini, par, ser);
 		s.startContainer();
 		s.createAgents();
+	}
+
+	public StartJade(int initiators, int participants, int services) {
+		this.initiators = initiators;
+		this.participants = participants;
+		this.services = services;
 	}
 
 	void startContainer() {
@@ -34,10 +53,6 @@ public class StartJade {
 
 	void createAgents() throws Exception {
 
-		int services = 1;
-		int participants = 5;
-		int initiators = 100;
-
 		String oServices[] = new String[services];
 		String oParticipants[] = new String[participants];
 
@@ -45,20 +60,23 @@ public class StartJade {
 			String s = "a(" + i + ")";
 			oServices[i] = s;
 		}
-		
-		AgentController aT = cc.createNewAgent("Terminator", "agent.TerminatorAgent", new Object[] { (long)(services * initiators) });
+
+		AgentController aT = cc.createNewAgent("Terminator", "agent.TerminatorAgent",
+				new Object[] { (long) (services * initiators) });
 		aT.start();
 
 		for (int i = 0; i < participants; i++) {
 			String name = "P" + i;
 			oParticipants[i] = name;
 
-			AgentController aP = cc.createNewAgent(name, "agent.ParticipantAgent", new Object[] { oServices[i % services] });
+			AgentController aP = cc.createNewAgent(name, "agent.ParticipantAgent",
+					new Object[] { oServices[i % services] });
 			aP.start();
 		}
 
 		for (int i = 0; i < initiators; i++) {
-			AgentController aI = cc.createNewAgent("I" + i, "agent.InitiatorAgent", new Object[] { oServices, oParticipants });
+			AgentController aI = cc.createNewAgent("I" + i, "agent.InitiatorAgent",
+					new Object[] { oServices, oParticipants });
 			aI.start();
 		}
 	}
