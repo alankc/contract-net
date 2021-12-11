@@ -31,13 +31,11 @@ public class ParticipantAgent extends Agent {
 		if (args != null && args.length == 1) {
 
 			String service = (String) args[0];
-			MessageTemplate protocolTemplate = MessageTemplate.and(
+			MessageTemplate template = MessageTemplate.and(
 					MessageTemplate.MatchProtocol(FIPANames.InteractionProtocol.FIPA_CONTRACT_NET),
 					MessageTemplate.MatchPerformative(ACLMessage.CFP));
-			MessageTemplate contentTemplate = MessageTemplate.MatchContent(service);
-			MessageTemplate generalTemplate = MessageTemplate.and(protocolTemplate, contentTemplate);
 			
-			addBehaviour(new ParticipantCFP(this, generalTemplate));
+			addBehaviour(new ParticipantCFP(this, template, service));
 		}
 
 	}

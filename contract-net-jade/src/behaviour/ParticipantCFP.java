@@ -13,10 +13,12 @@ import jade.proto.SSResponderDispatcher;
 
 @SuppressWarnings("serial")
 public class ParticipantCFP extends SSResponderDispatcher {
+	
+	private String myService;
 
-	public ParticipantCFP(Agent a, MessageTemplate tpl) {
+	public ParticipantCFP(Agent a, MessageTemplate tpl, String myService) {
 		super(a, tpl);
-		// TODO Auto-generated constructor stub
+		this.myService = myService;
 	}
 
 	@Override
@@ -28,10 +30,11 @@ public class ParticipantCFP extends SSResponderDispatcher {
 				// System.out.println("Agent "+getLocalName()+": CFP received from
 				// "+cfp.getSender().getName()+". Action is "+cfp.getContent());
 				
-				//If agent is no working
-				if (!((ParticipantAgent)myAgent).getWorking()) {
+				//If agent is no working and know the service
+				if (!((ParticipantAgent)myAgent).getWorking() && cfp.getContent().equals(myService)) {
 					// We provide a proposal
 					// System.out.println("Agent "+getLocalName()+": Proposing "+proposal);
+									
 					int proposal = evaluateAction();
 					ACLMessage propose = cfp.createReply();
 					propose.setPerformative(ACLMessage.PROPOSE);
@@ -54,7 +57,7 @@ public class ParticipantCFP extends SSResponderDispatcher {
 					
 					
 					((ParticipantAgent)myAgent).setWorking(true);
-					
+										
 					ACLMessage inform = accept.createReply();
 					inform.setPerformative(ACLMessage.INFORM);
 					
