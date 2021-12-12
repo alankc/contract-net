@@ -1,0 +1,14 @@
+Initiator: 10
+Participant: 30
+Services: 1
+I3	22.53803
+I1	34.544919
+I0	49.487074
+I2	47.181049
+I5	41.953213
+I6	41.664178
+I4	56.829553
+I9	28.848573
+I8	36.762239
+I7	28.311107
+Terminator: I will be back
