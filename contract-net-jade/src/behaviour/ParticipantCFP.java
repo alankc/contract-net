@@ -51,10 +51,14 @@ public class ParticipantCFP extends SSResponderDispatcher {
 			protected ACLMessage handleAcceptProposal(ACLMessage cfp, ACLMessage propose, ACLMessage accept)
 					throws FailureException {
 				// System.out.println("Agent "+getLocalName()+": Proposal accepted");
-				if (performAction()) {
+				
+				//change if(performAction()) to if(true) to test with measurements in conclusion
+				//Obs.: in initiator
+				//The CFP's end must be measured in the receivement of inform when if(true) 
+				//The CFP's end must be measured in before handleAllResponses when if(performAction())
+				if (true) {
 					// System.out.println("Agent "+getLocalName()+": Action successfully
 					// performed");
-					
 					
 					((ParticipantAgent)myAgent).setWorking(true);
 										

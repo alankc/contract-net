@@ -1,0 +1,45 @@
+Initiator: 5
+Participant: 30
+Services: 1
+I2	27.719702
+I0	34.179148
+I3	32.087559
+I4	28.320493
+I1	40.402861
+Terminator: I will be back
+Initiator: 5
+Participant: 30
+Services: 1
+I2	25.125563
+I1	30.499702
+I3	37.994095
+I0	44.31431
+I4	25.955146
+Terminator: I will be back
+Initiator: 5
+Participant: 30
+Services: 1
+I2	29.956235
+I3	31.480018
+I1	33.301592
+I0	38.406168
+I4	46.337104
+Terminator: I will be back
+Initiator: 5
+Participant: 30
+Services: 1
+I1	22.776151
+I0	35.732226
+I2	34.123928
+I3	23.60237
+I4	23.734882
+Terminator: I will be back
+Initiator: 5
+Participant: 30
+Services: 1
+I1	17.254406
+I0	33.595305
+I2	22.410859
+I3	19.842132
+I4	13.860596
+Terminator: I will be back

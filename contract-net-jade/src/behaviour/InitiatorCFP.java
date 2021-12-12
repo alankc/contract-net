@@ -79,6 +79,24 @@ public class InitiatorCFP extends ContractNetInitiator {
 			 //+ bestProposer.getName());
 			accept.setPerformative(ACLMessage.ACCEPT_PROPOSAL);
 		}
+		
+		/*end = System.nanoTime();
+		// System.out.println(myAgent.getLocalName() + " - End: " + end / 1000000.0);
+		System.out.println(myAgent.getLocalName() + "\t" + (end - start) / 1000000.0);
+		
+		//Sending message to terminator
+		//It probably will not wait all conclusions
+		ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+		message.addReceiver(new AID("Terminator", AID.ISLOCALNAME));
+		message.setContent("done");
+		myAgent.send(message);*/
+	
+	}
+
+	protected void handleInform(ACLMessage inform) {
+		// System.out.println("Agent " + inform.getSender().getName() + " successfully
+		// performed the requested action");
+		// System.exit(0);
 		end = System.nanoTime();
 		// System.out.println(myAgent.getLocalName() + " - End: " + end / 1000000.0);
 		System.out.println(myAgent.getLocalName() + "\t" + (end - start) / 1000000.0);
@@ -89,13 +107,6 @@ public class InitiatorCFP extends ContractNetInitiator {
 		message.addReceiver(new AID("Terminator", AID.ISLOCALNAME));
 		message.setContent("done");
 		myAgent.send(message);
-	
-	}
-
-	protected void handleInform(ACLMessage inform) {
-		// System.out.println("Agent " + inform.getSender().getName() + " successfully
-		// performed the requested action");
-		// System.exit(0);
 	}
 
 }
