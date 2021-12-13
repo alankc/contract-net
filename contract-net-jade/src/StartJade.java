@@ -54,7 +54,9 @@ public class StartJade {
 	void createAgents() throws Exception {
 
 		String oServices[] = new String[services];
-		String oParticipants[] = new String[participants];
+		
+		//used in previous solution without yellow pages
+		//String oParticipants[] = new String[participants];
 
 		for (int i = 0; i < services; i++) {
 			String s = "a(" + i + ")";
@@ -67,16 +69,20 @@ public class StartJade {
 
 		for (int i = 0; i < participants; i++) {
 			String name = "P" + i;
-			oParticipants[i] = name;
+			//oParticipants[i] = name;
 
 			AgentController aP = cc.createNewAgent(name, "agent.ParticipantAgent",
 					new Object[] { oServices[i % services] });
 			aP.start();
 		}
+		
+		Thread.sleep(2000);
 
 		for (int i = 0; i < initiators; i++) {
+			//AgentController aI = cc.createNewAgent("I" + i, "agent.InitiatorAgent",
+			//		new Object[] { oServices, oParticipants });
 			AgentController aI = cc.createNewAgent("I" + i, "agent.InitiatorAgent",
-					new Object[] { oServices, oParticipants });
+					new Object[] { oServices, participants });
 			aI.start();
 		}
 	}
