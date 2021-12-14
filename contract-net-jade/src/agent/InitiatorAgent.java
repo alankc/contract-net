@@ -1,3 +1,9 @@
+/*
+ * Base on JADE examples of protocols
+ * https://jade.tilab.com/documentation/examples/protocols/
+ * 
+ * */
+
 package agent;
 
 import java.util.Date;

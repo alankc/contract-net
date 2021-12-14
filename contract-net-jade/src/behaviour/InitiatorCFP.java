@@ -1,3 +1,9 @@
+/*
+ * Base on JADE examples of protocols
+ * https://jade.tilab.com/documentation/examples/protocols/
+ * 
+ * */
+
 package behaviour;
 
 import java.util.Enumeration;
@@ -57,12 +63,12 @@ public class InitiatorCFP extends ContractNetInitiator {
 		while (e.hasMoreElements()) {
 			ACLMessage msg = (ACLMessage) e.nextElement();
 			if (msg.getPerformative() == ACLMessage.PROPOSE) {
-				
+
 				//setting reply with reject
 				ACLMessage reply = msg.createReply();
 				reply.setPerformative(ACLMessage.REJECT_PROPOSAL);
 				acceptances.addElement(reply);
-				
+
 				//defining best proposal
 				double proposal = Double.parseDouble(msg.getContent());
 				if (proposal < bestProposal) {
@@ -79,18 +85,22 @@ public class InitiatorCFP extends ContractNetInitiator {
 			 //+ bestProposer.getName());
 			accept.setPerformative(ACLMessage.ACCEPT_PROPOSAL);
 		}
-		
-		/*end = System.nanoTime();
+
+		/*Changed to handleInform
+		*we ensure that all Participant agents finishes with sucess, so
+		*finish measurements in handleInform
+
+		end = System.nanoTime();
 		// System.out.println(myAgent.getLocalName() + " - End: " + end / 1000000.0);
 		System.out.println(myAgent.getLocalName() + "\t" + (end - start) / 1000000.0);
-		
+
 		//Sending message to terminator
 		//It probably will not wait all conclusions
 		ACLMessage message = new ACLMessage(ACLMessage.INFORM);
 		message.addReceiver(new AID("Terminator", AID.ISLOCALNAME));
 		message.setContent("done");
 		myAgent.send(message);*/
-	
+
 	}
 
 	protected void handleInform(ACLMessage inform) {
@@ -100,7 +110,7 @@ public class InitiatorCFP extends ContractNetInitiator {
 		end = System.nanoTime();
 		// System.out.println(myAgent.getLocalName() + " - End: " + end / 1000000.0);
 		System.out.println(myAgent.getLocalName() + "\t" + (end - start) / 1000000.0);
-		
+
 		//Sending message to terminator
 		//It probably will not wait all conclusions
 		ACLMessage message = new ACLMessage(ACLMessage.INFORM);

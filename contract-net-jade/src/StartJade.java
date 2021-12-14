@@ -10,7 +10,7 @@ import jade.wrapper.StaleProxyException;
 
 /**
  * Starts JADE main container with several agents
- * 
+ *
  * @author jomi
  */
 public class StartJade {
@@ -26,7 +26,7 @@ public class StartJade {
 		int ini = Integer.parseInt(args[0]);
 		int par = Integer.parseInt(args[1]);
 		int ser = Integer.parseInt(args[2]);
-		
+
 		System.out.println("Initiator: " + ini);
 		System.out.println("Participant: " + par);
 		System.out.println("Services: " + ser);
@@ -54,7 +54,7 @@ public class StartJade {
 	void createAgents() throws Exception {
 
 		String oServices[] = new String[services];
-		
+
 		//used in previous solution without yellow pages
 		//String oParticipants[] = new String[participants];
 
@@ -63,6 +63,7 @@ public class StartJade {
 			oServices[i] = s;
 		}
 
+		//Agent used to finish the mas when all Initiators have sent selection results to Participants
 		AgentController aT = cc.createNewAgent("Terminator", "agent.TerminatorAgent",
 				new Object[] { (long) (services * initiators) });
 		aT.start();
@@ -75,7 +76,8 @@ public class StartJade {
 					new Object[] { oServices[i % services] });
 			aP.start();
 		}
-		
+
+		//To ensure registration in yellow pages
 		Thread.sleep(2000);
 
 		for (int i = 0; i < initiators; i++) {

@@ -1,4 +1,5 @@
 #!/bin/bash
+#Runs the experiments using the compiled mas
 
 options="-classpath /home/alan/Documents/contract-net/contract-net-jade/bin:/home/alan/Documents/contract-net/contract-net-jade/lib/jade.jar -XX:+ShowCodeDetailsInExceptionMessages"
 
