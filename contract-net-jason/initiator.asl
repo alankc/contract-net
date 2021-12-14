@@ -1,3 +1,5 @@
+//Code adapted from Jason contract-net example
+
 //Initial beliefs and goals
 !register.
 //!launch_cfp(1, buy(car)).

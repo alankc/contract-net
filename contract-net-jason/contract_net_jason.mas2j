@@ -1,15 +1,5 @@
-/*
-    contract_net_jason
-    ---------------------------
 
-    Jason Project File
-
-    This file defines the initial state of the MAS
-
-    Jason 3.0
-    dezembro 09, 2021 - 09:25:26
-*/
-
+//Adaptar de acordo com o experimento sendo realizado
 MAS contract_net_jason {
 
     infrastructure: Local

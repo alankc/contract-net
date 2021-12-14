@@ -1,3 +1,7 @@
+//Code adapted from Jason contract-net example
+//add i_do(Service): verifies iff agent know the Service
+//add working: befief added when agent is performing Service an removed at the end
+
 // gets the price for the product,
 // a random value between 100 and 110.
 price(Service,X) :- i_do(Service) & not working & .random(R) & X = 100 * R.
